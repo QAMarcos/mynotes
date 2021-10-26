@@ -3,13 +3,34 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="./style.scss">
     <script defer src="./note.js"></script>
-<title>My notes Application </title>
+    <title>My notes Application </title>
 </head>
 
-
+<body>
+    <div class="modal-conteiner">
+        <div class="modal">
+            <button class="modal__btn">&times;</button>
+            <h2 class="modal__title"></h2>
+            <p class="modal__body"></p>
+        </div>
+    </div>
+    <div class="form-conteiner">
+        <h1>My Notes</h1>
+        <h3>Adicione uma nova nota:</h3>
+        <form>
+            <label for="title">Título
+                <input type="text" id="title" placeholder="Digite aqui o título">
+            </label>
+            <label for="note">Nota
+                <textarea name="note" id="note" cols="25" rows="10" placeholder="Digite aqui sua nota"></textarea>
+            </label>
+        </form>
+    </div>
+    <div class="note-conteiner"></div>
+</body>
 
 
 
