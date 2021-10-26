@@ -1,2 +1,2 @@
 # mynotes
-A javascript public note project.
+A javascript public note project by me.
