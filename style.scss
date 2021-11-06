@@ -14,6 +14,10 @@ $danger: #E01541;
 $dark: #121614;
 $light: #a4b1aa;
 
+// box shadow
+
+$boxs: 3px 5px 8px 2px;
+
 body {
     font-family: 'Poppins', sans-serif;
     display:grid;
@@ -94,7 +98,30 @@ form {
         }
       }
     }
-    
 
+    [type="submit"]{
+        background-color: $sucess;
+        box-shadow: $boxs rgba($sucess, .2);
+        border: 3px solid transparent;
+        font-size: 1.3rem;
+        color: white;
+        padding: .5rem;
+        cursor: pointer;
+        transition: all 250ms ease-in-out;
+    
+        &:hover, &:focus {
+        outline: none;
+        box-shadow: none;
+        border: 3px solid rgba($dark, .5)
+      }
+
+    }
+}
+
+.note-conteiner{
+max-width: 1000px;
+margin: 2rem auto 1rem;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
